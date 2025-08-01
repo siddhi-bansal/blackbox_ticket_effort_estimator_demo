@@ -127,14 +127,14 @@ def main():
     with col1:
         short_description = st.text_input(
             "Short Description",
-            placeholder="Enter a brief summary of the issue...",
+            placeholder="Desk phone not working",
             help="Provide a concise summary of the ticket"
         )
     
     with col2:
         description = st.text_area(
             "Detailed Description",
-            placeholder="Enter detailed description of the issue...",
+            placeholder="Desk Phone is not working. The phone does not ring and cannot make calls. Please send a technician to fix it.",
             height=100,
             help="Provide detailed information about the issue"
         )
