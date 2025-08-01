@@ -4,19 +4,7 @@ try:
     __import__("pysqlite3")
     # Only delete sqlite3 if it exists in sys.modules
     if "sqlite3" in sys.modules:
-        d            except Exception as e:
-                st.error(f"An error occurred while processing your request: {str(e)}")
-                
-                # Provide helpful guidance for common errors
-                error_message = str(e).lower()
-                if "missing required environment variables" in error_message:
-                    st.markdown("### 🔧 Configuration Issue")
-                    st.info("It looks like the app is missing some configuration. Please ensure the following environment variables are set in Streamlit Cloud secrets: CHROMA_API_KEY, CHROMA_TENANT, CHROMA_DATABASE")
-                elif "connection" in error_message or "chromadb" in error_message:
-                    st.markdown("### 🌐 Connection Issue")
-                    st.info("There seems to be a connection issue with the database. This could be temporary - please try again in a few moments.")
-                else:
-                    st.markdown("Please check your input and try again.") sys.modules["sqlite3"]
+        del sys.modules["sqlite3"]
     import pysqlite3 as sqlite3
     sys.modules["sqlite3"] = sqlite3
 except ImportError:
@@ -139,14 +127,14 @@ def main():
     with col1:
         short_description = st.text_input(
             "Short Description",
-            placeholder="Desk Phone Issue",
+            placeholder="Enter a brief summary of the issue...",
             help="Provide a concise summary of the ticket"
         )
     
     with col2:
         description = st.text_area(
             "Detailed Description",
-            placeholder="Desk Phone not working, unable to make calls. Please send a technician to check the connection.",
+            placeholder="Enter detailed description of the issue...",
             height=100,
             help="Provide detailed information about the issue"
         )
