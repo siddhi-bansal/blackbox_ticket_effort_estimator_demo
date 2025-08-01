@@ -166,7 +166,7 @@ def main():
                     if viz_path:
                         st.markdown("---")
                         st.markdown("### 📈 Hours Distribution Visualization")
-                        st.image(viz_path, caption=f"Hours distribution for {closest_label} from historical data", use_container_width=True)
+                        st.image(viz_path, caption=f"Hours distribution for {closest_label} from historical data", width=500)
                     else:
                         st.markdown("---")
                         st.markdown("### 📈 Visualization")

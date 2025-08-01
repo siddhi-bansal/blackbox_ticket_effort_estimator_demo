@@ -136,8 +136,8 @@ def main():
     labels_and_hours = {}
     testset_labels = []
     # Get closest labels for train set and store hours in labels_and_hours
-    for index, row in telecom_tickets.iterrows():
-        print(f"Processing row {index + 1}/{len(telecom_tickets)}")
+    for index, row in train.iterrows():
+        print(f"Processing row {index + 1}/{len(train)}")
         description = row['Short Description'] + '. ' + row['Description']
         closest_label, closest_definition = get_closest_label_from_chroma_db(description, chroma_client)
         if closest_label not in labels_and_hours:
@@ -148,43 +148,43 @@ def main():
         testset_labels.append([row['Case Number'], row['Short Description'], row['Description'], closest_label + ': ' + closest_definition, row['Hours']])
 
     # For each label, generate a distribution of hours
-    for label, hours in labels_and_hours.items():
-        if len(hours) > 0:
-            plt.hist(hours, bins=10, alpha=0.5, label=label)
-            plt.xlabel('Hours')
-            plt.ylabel('Frequency')
-            plt.title(f'Hours Distribution for {label}')
-            plt.legend()
-            # Sanitize the label for use as filename
-            safe_label = re.sub(r'[<>:"/\\|?*]', '_', label)
-            plt.savefig(f'visualizations/hours_distribution_{safe_label}.png')
-            plt.clf()  # Clear the figure for the next plot
+    # for label, hours in labels_and_hours.items():
+    #     if len(hours) > 0:
+    #         plt.hist(hours, bins=10, alpha=0.5, label=label)
+    #         plt.xlabel('Hours')
+    #         plt.ylabel('Frequency')
+    #         plt.title(f'Hours Distribution for {label}')
+    #         plt.legend()
+    #         # Sanitize the label for use as filename
+    #         safe_label = re.sub(r'[<>:"/\\|?*]', '_', label)
+    #         plt.savefig(f'visualizations/hours_distribution_{safe_label}.png')
+    #         plt.clf()  # Clear the figure for the next plot
 
     # Create a DataFrame for the training set labels
-#     train_labels_df = pd.DataFrame(testset_labels, columns=['Case Number', 'Short Description', 'Description', 'Label and Definition', 'Hours'])
-#     train_labels_df.to_csv('train_labels.csv', index=False)
-#     print("Training set processed and saved to train_labels.csv")
+    train_labels_df = pd.DataFrame(testset_labels, columns=['Case Number', 'Short Description', 'Description', 'Label and Definition', 'Hours'])
+    train_labels_df.to_csv('train_labels.csv', index=False)
+    print("Training set processed and saved to train_labels.csv")
 
-#     # Save labels and hours to a CSV file
-#     labels_and_hours_df = pd.DataFrame(list(labels_and_hours.items()), columns=['Label', 'Hours'])
-#     labels_and_hours_df.to_csv('labels_and_hours.csv', index=False)
+    # Save labels and hours to a CSV file
+    labels_and_hours_df = pd.DataFrame(list(labels_and_hours.items()), columns=['Label', 'Hours'])
+    labels_and_hours_df.to_csv('labels_and_hours.csv', index=False)
     
-#     print("Predicting hours for test set...")
-#     predictions = []
-#     # Predict number of hours for test set
-#     for index, row in test.iterrows():
-#         print(f"Processing row {index + 1}/{len(test)}")
-#         description = str(row['Short Description']) + ': ' + str(row['Description'])
-#         closest_label, closest_definition = get_closest_label_from_chroma_db(description, chroma_client)
-#         if closest_label in labels_and_hours:
-#             # Predict hours based on training data
-#             predicted_hours = sum(labels_and_hours[closest_label]) / len(labels_and_hours[closest_label])
-#             predictions.append([row['Case Number'], row['Short Description'], row['Description'], closest_label + ': ' + closest_definition, predicted_hours, row['Hours']])
+    print("Predicting hours for test set...")
+    predictions = []
+    # Predict number of hours for test set
+    for index, row in test.iterrows():
+        print(f"Processing row {index + 1}/{len(test)}")
+        description = str(row['Short Description']) + ': ' + str(row['Description'])
+        closest_label, closest_definition = get_closest_label_from_chroma_db(description, chroma_client)
+        if closest_label in labels_and_hours:
+            # Predict hours based on training data
+            predicted_hours = sum(labels_and_hours[closest_label]) / len(labels_and_hours[closest_label])
+            predictions.append([row['Case Number'], row['Short Description'], row['Description'], closest_label + ': ' + closest_definition, predicted_hours, row['Hours']])
 
-#     # Create a DataFrame for the predictions
-#     predictions_df = pd.DataFrame(predictions, columns=['Case Number', 'Short Description', 'Description', 'Predicted Label and Definition', 'Predicted Hours', 'Actual Hours'])
-#     predictions_df.to_csv('predictions.csv', index=False)
-#     print("Predictions saved to predictions.csv")
+    # Create a DataFrame for the predictions
+    predictions_df = pd.DataFrame(predictions, columns=['Case Number', 'Short Description', 'Description', 'Predicted Label and Definition', 'Predicted Hours', 'Actual Hours'])
+    predictions_df.to_csv('predictions.csv', index=False)
+    print("Predictions saved to predictions.csv")
 
 if __name__ == "__main__":
     main()
