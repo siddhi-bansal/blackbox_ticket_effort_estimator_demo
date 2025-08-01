@@ -2,6 +2,10 @@
 
 This project uses machine learning to predict the effort required to resolve support tickets based on historical data and similarity matching.
 
+## 🚀 Live Demo
+
+**Try the app live at:** [https://blackbox-ticket-effort-estimator-demo.streamlit.app/](https://blackbox-ticket-effort-estimator-demo.streamlit.app/)
+
 ## Features
 
 - **Ticket Categorization**: Automatically categorizes tickets based on descriptions
@@ -19,8 +23,6 @@ pip install -r requirements.txt
 
 ### 2. Environment Variables
 
-#### For Local Development
-
 Create a `.env` file with your API credentials:
 
 ```env
@@ -34,25 +36,6 @@ API_VERSION=2023-05-15
 CHROMA_API_KEY=your-chroma-api-key
 CHROMA_TENANT=your-chroma-tenant-id
 CHROMA_DATABASE=your-chroma-database-name
-```
-
-#### For Streamlit Cloud Deployment
-
-1. **Push to GitHub**: Make sure your `.env` file is in `.gitignore` (already configured)
-2. **Deploy to Streamlit Cloud**: 
-   - Go to [share.streamlit.io](https://share.streamlit.io)
-   - Connect your GitHub repository
-   - Select `my_app.py` as your main file
-3. **Set Secrets**: In your Streamlit Cloud app settings, go to "Secrets" and add:
-
-```toml
-AZURE_OPENAI_ENDPOINT = "https://your-openai-endpoint.openai.azure.com/"
-AZURE_OPENAI_API_KEY = "your-azure-openai-key-here"
-DEPLOYMENT_NAME = "your-embedding-deployment-name"
-API_VERSION = "2023-05-15"
-CHROMA_API_KEY = "your-chroma-api-key"
-CHROMA_TENANT = "your-chroma-tenant-id"
-CHROMA_DATABASE = "your-chroma-database-name"
 ```
 
 ## Usage
