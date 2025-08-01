@@ -1,4 +1,5 @@
 .env
+.streamlit/secrets.toml
 streamlit_secrets_template.toml
 telecom_tickets.csv
 train_labels.csv
