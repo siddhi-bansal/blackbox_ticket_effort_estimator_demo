@@ -1,6 +1,21 @@
 # main.py
 # Contains the main logic for processing telecom tickets (train, test) and generating visualizations.
 
+# SQLite compatibility fix for Streamlit Cloud
+import sys
+if "pysqlite3" in sys.modules:
+    del sys.modules["sqlite3"]
+    import pysqlite3 as sqlite3
+    sys.modules["sqlite3"] = sys.modules["pysqlite3"]
+else:
+    try:
+        __import__("pysqlite3")
+        del sys.modules["sqlite3"]
+        import pysqlite3 as sqlite3
+        sys.modules["sqlite3"] = sys.modules["pysqlite3"]
+    except ImportError:
+        pass
+
 import chromadb
 from openai import AzureOpenAI
 import pandas as pd
