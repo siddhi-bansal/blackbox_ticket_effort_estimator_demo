@@ -1,17 +1,14 @@
 # SQLite compatibility fix for Streamlit Cloud
 import sys
-if "pysqlite3" in sys.modules:
-    del sys.modules["sqlite3"]
-    import pysqlite3 as sqlite3
-    sys.modules["sqlite3"] = sys.modules["pysqlite3"]
-else:
-    try:
-        __import__("pysqlite3")
+try:
+    __import__("pysqlite3")
+    # Only delete sqlite3 if it exists in sys.modules
+    if "sqlite3" in sys.modules:
         del sys.modules["sqlite3"]
-        import pysqlite3 as sqlite3
-        sys.modules["sqlite3"] = sys.modules["pysqlite3"]
-    except ImportError:
-        pass
+    import pysqlite3 as sqlite3
+    sys.modules["sqlite3"] = sqlite3
+except ImportError:
+    pass
 
 # Read labels_and_hours as a dictionary from final_labels_and_hours.csv
 import pandas as pd
