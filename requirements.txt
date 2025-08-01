@@ -1,0 +1,7 @@
+streamlit>=1.32.0
+pandas>=1.3.0
+chromadb
+openai
+spacy>=3.0.0
+matplotlib>=3.0.0
+python-dotenv

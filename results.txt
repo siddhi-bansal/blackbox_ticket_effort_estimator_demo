@@ -1,0 +1,228 @@
+Connected to ChromaDB successfully.
+Processing row 1/113
+Processing row 2/113
+Row 2: Expected 'Telecom - Backup/ Restore Failure', got 'Telecom - Call Drop Issues'
+Processing row 3/113
+CORRECT - Row 3: Expected 'Telecom - VoiceMail password issues', got 'Telecom - Voicemail issues / Voicemail password issues'
+Processing row 4/113
+CORRECT -Row 4: Expected 'Telecom - Desk Phone Add/ Remove/ Move ', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 5/113
+Row 5: Expected 'Telecom - In/Out Calling Issues ', got 'Telecom - Console / Operator'
+Processing row 6/113
+Row 6: Expected 'Telecom - nan', got 'Telecom - Console / Operator'
+Processing row 7/113
+Row 7: Expected 'Telecom - ?', got 'Telecom - EBC'
+Processing row 8/113
+Row 8: Expected 'Telecom - Reporting Issue', got 'Telecom - CDR'
+Processing row 9/113
+Row 9: Expected 'Telecom - Licensing ', got 'Telecom - User Account activation / deactivation'
+Processing row 10/113
+CORRECT - Row 10: Expected 'Telecom - VoiceMail password issues', got 'Telecom - Voicemail issues / Voicemail password issues'
+Processing row 11/113
+Row 11: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Call Drop Issues'
+Processing row 12/113
+Row 12: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Console / Operator'
+Processing row 13/113
+Row 13: Expected 'Telecom - IP Softphone ', got 'Telecom - Console / Operator'
+Processing row 14/113
+Row 14: Expected 'Telecom - Fibre Optic Cable ', got 'Telecom - Work scheduling'
+Processing row 15/113
+Row 15: Expected 'Telecom - Site Survey', got 'Telecom - Network Audit'
+Processing row 16/113
+Row 16: Expected 'Telecom - Others', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 17/113
+Row 17: Expected 'Telecom - Call Flow Issues ', got 'Telecom - In/out calling issues'
+Processing row 18/113
+Row 18: Expected 'Telecom - Monitoring', got 'Telecom - Port Network'
+Processing row 19/113
+Row 19: Expected 'Telecom - New Installation/ Cable installation', got 'Telecom - Port Network'
+Processing row 20/113
+Row 20: Expected 'Telecom - New Installation/ Antenna installation', got 'Telecom - Port Network'
+Processing row 21/113
+Row 21: Expected 'Telecom - In/Out Calling Issues ', got 'Telecom - Supervisor'
+Processing row 22/113
+Row 22: Expected 'Telecom - VoiceMail issues', got 'Telecom - Station / Extension'
+Processing row 23/113
+Row 23: Expected 'Telecom - Install Display ', got 'Telecom - Supervisor'
+Processing row 24/113
+Row 24: Expected 'Telecom - Cable Issue ', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 25/113
+Row 25: Expected 'Telecom - DIA Activation ', got 'Telecom - User Account activation / deactivation'
+Processing row 26/113
+Row 26: Expected 'Telecom - Phone line installations', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 27/113
+CORRECT - Row 27: Expected 'Telecom - VoiceMail issues', got 'Telecom - Voicemail issues / Voicemail password issues'
+Processing row 28/113
+Row 28: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Voicemail issues / Voicemail password issues'
+Processing row 29/113
+Row 29: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 30/113
+Row 30: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - In/out calling issues'
+Processing row 31/113
+Row 31: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 32/113
+Row 32: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 33/113
+Row 33: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - EBC'
+Processing row 34/113
+Row 34: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - EBC'
+Processing row 35/113
+Row 35: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 36/113
+Row 36: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Console / Operator'
+Processing row 37/113
+Row 37: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 38/113
+Row 38: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Station / Extension'
+Processing row 39/113
+Row 39: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Station / Extension'
+Processing row 40/113
+Row 40: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 41/113
+Row 41: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - EBC'
+Processing row 42/113
+Row 42: Expected 'Telecom - ?', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 43/113
+Row 43: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 44/113
+Row 44: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 45/113
+Row 45: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Station / Extension'
+Processing row 46/113
+Row 46: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Console / Operator'
+Processing row 47/113
+Row 47: Expected 'Telecom - Quote for Cabling', got 'Telecom - Network Audit'
+Processing row 48/113
+Row 48: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 49/113
+Row 49: Expected 'Telecom - IP Softphone', got 'Telecom - Console / Operator'
+Processing row 50/113
+Row 50: Expected 'Telecom - Phone line installations', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 51/113
+Row 51: Expected 'Telecom - ??', got 'Telecom - Console / Operator'
+Processing row 52/113
+Row 52: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Access changes'
+Processing row 53/113
+Row 53: Expected 'Telecom - CDR', got 'Telecom - Reporting issues'
+Processing row 54/113
+Row 54: Expected 'Telecom - Call Flow Issues', got 'Telecom - Console / Operator'
+Processing row 55/113
+Row 55: Expected 'Telecom - CDR', got 'Telecom - Reporting issues'
+Processing row 56/113
+CORRECT - Row 56: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 57/113
+Row 57: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 58/113
+CORRECT - 58: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 59/113
+Row 59: Expected 'Telecom - Site Survey', got 'Telecom - Network Audit'
+Processing row 60/113
+Row 60: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 61/113
+Row 61: Expected 'Telecom - SSL Certificate Issue', got 'Telecom - Supervisor'
+Processing row 62/113
+Row 62: Expected 'Telecom - SSL Certificate Issue', got 'Telecom - SSO login issues'
+Processing row 63/113
+Row 63: Expected 'Telecom - CDR', got 'Telecom - Reporting issues'
+Processing row 64/113
+Row 64: Expected 'Telecom - CDR', got 'Telecom - Reporting issues'
+Processing row 65/113
+Row 65: Expected 'Telecom - WFM', got 'Telecom - Forecasting issues'
+Processing row 66/113
+Row 66: Expected 'Telecom - nan', got 'Telecom - Voicemail issues / Voicemail password issues'
+Processing row 67/113
+Row 67: Expected 'Telecom - Call Flow Issues', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 68/113
+Row 68: Expected 'Telecom - CDR', got 'Telecom - Reporting issues'
+Processing row 69/113
+Row 69: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 70/113
+CORRECT - Row 70: Expected 'Telecom - In/Out Calling Issues ', got 'Telecom - In/out calling issues'
+Processing row 71/113
+Row 71: Expected 'Telecom - VoiceMail issues', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 72/113
+Processing row 73/113
+CORRECT - Row 73: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 74/113
+Row 74: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - In/out calling issues'
+Processing row 75/113
+Row 75: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 76/113
+Row 76: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 77/113
+Row 77: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 78/113
+Row 78: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 79/113
+Row 79: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - In/out calling issues'
+Processing row 80/113
+Row 80: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 81/113
+Row 81: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Console / Operator'
+Processing row 82/113
+Row 82: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 83/113
+Row 83: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 84/113
+Row 84: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 85/113
+Row 85: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Call Flow issues'
+Processing row 86/113
+Row 86: Expected 'Telecom - Call Flow Issues', got 'Telecom - Console / Operator'
+Processing row 87/113
+Row 87: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Call Flow issues'
+Processing row 88/113
+Row 88: Expected 'Telecom - ???', got 'Telecom - Console / Operator'
+Processing row 89/113
+Row 89: Expected 'Telecom - Network Audit ', got 'Telecom - Remote access'
+Processing row 90/113
+Row 90: Expected 'Telecom - nan', got 'Telecom - Console / Operator'
+Processing row 91/113
+Row 91: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - Dead Phone'
+Processing row 92/113
+Row 92: Expected 'Telecom - Site Survey', got 'Telecom - Network Audit'
+Processing row 93/113
+Row 93: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - In/out calling issues'
+Processing row 94/113
+Row 94: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - Supervisor'
+Processing row 95/113
+Row 95: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - EBC'
+Processing row 96/113
+Row 96: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 97/113
+Row 97: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - Supervisor'
+Processing row 98/113
+Row 98: Expected 'Telecom - nan', got 'Telecom - Call Flow issues'
+Processing row 99/113
+Row 99: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - Supervisor'
+Processing row 100/113
+Row 100: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - Supervisor'
+Processing row 101/113
+Row 101: Expected 'Telecom - nan', got 'Telecom - Work Force Integration'
+Processing row 102/113
+CORRECT - Row 102: Expected 'Telecom - Voicemail Issues', got 'Telecom - Voicemail to Email issues'
+Processing row 103/113
+Row 103: Expected 'Telecom - nan', got 'Telecom - Desk Phone Dead, Add/ remove/modify'
+Processing row 104/113
+Row 104: Expected 'Telecom - Desk Phone Add/ Remove/ Move', got 'Telecom - SSL Certificate issue'
+Processing row 105/113
+CORRECT - Row 105: Expected 'Telecom - Voicemail Password issues', got 'Telecom - Voicemail issues / Voicemail password issues'
+Processing row 106/113
+Processing row 107/113
+Row 107: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - Supervisor'
+Processing row 108/113
+Row 108: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - Console / Operator'
+Processing row 109/113
+Row 109: Expected 'Telecom - Software Install', got 'Telecom - One X Communicator'
+Processing row 110/113
+Row 110: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - Supervisor'
+Processing row 111/113
+Row 111: Expected 'Telecom - Desk Phone Dead, Add/ remove/modify', got 'Telecom - Supervisor'
+Processing row 112/113
+Row 112: Expected 'Telecom - Station/Extension', got 'Telecom - Dead Phone'
+Processing row 113/113
+Row 113: Expected 'Telecom - Dead phone', got 'Telecom - In/out calling issues'
+
+Num Correct: 13/103
+Num Total: 113 - 10 nan/? values = 103
+Accuracy: 12.62%
